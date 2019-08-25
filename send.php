@@ -6,9 +6,15 @@ require 'PHPMailer/PHPMailerAutoload.php';
 // ==== раскомментировать, если письма отправляются без значений полей ====
 $text       = '';
 $adminEmail = 'kacevnik@yandex.ru';
-$email      = $_POST['email'];     		if($email){$text      = 'E-mail пользователя: '.$email.'<br>';}
-$phone      = $_POST['phone'];     		if($phone){$text      = $text.'Телефон пользователя: '.$phone.'<br>';}
-$name       = $_POST['name'];     		if($name){$text       = $text.'Имя пользователя: '.$name.'<br>';}
+$email      = $_POST['name'];     		if($email){$text      = 'Имя: '.$email.'<br>';}
+$phone      = $_POST['age'];     		if($phone){$text      = $text.'Возраст: '.$phone.'<br>';}
+$name       = $_POST['country'];     		if($name){$text       = $text.'Страна: '.$name.'<br>';}
+$name       = $_POST['city'];     		if($name){$text       = $text.'Город: '.$name.'<br>';}
+$name       = $_POST['rost'];     		if($name){$text       = $text.'Рост: '.$name.'<br>';}
+$name       = $_POST['wes'];     		if($name){$text       = $text.'Вес: '.$name.'<br>';}
+$name       = $_POST['phone'];     		if($name){$text       = $text.'Телефон: '.$name.'<br>';}
+$name       = $_POST['profil'];     		if($name){$text       = $text.'Профиль: '.$name.'<br>';}
+$name       = $_POST['message'];     		if($name){$text       = $text.'Сообщение: '.$name.'<br>';}
 $form       = $_POST['form'];
 
 
